@@ -7,8 +7,9 @@ const userSchema = new mongoose.Schema({
   contact: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Contact"}
-  ]
+      ref: "Contact",
+    },
+  ],
 });
 
 const User = mongoose.model("User", userSchema);
