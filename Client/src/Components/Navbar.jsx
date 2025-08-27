@@ -30,7 +30,9 @@ const Navbar = () => {
   const logout = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3002/api/auth/logout"
+        "https://cms-contact-management.onrender.com/api/auth/logout",
+        {},
+        { withCredentials: true }
       );
       localStorage.removeItem("token");
       setIsLoggedIn(false);
