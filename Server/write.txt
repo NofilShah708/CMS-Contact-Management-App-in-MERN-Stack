@@ -1,3 +1,1 @@
-PORT='3002'
-MONGO_URI='mongodb://localhost:27017/contact-management-system'
-JWT_SECRET='credential'
+CMS (contact management system) in MERN STACK
