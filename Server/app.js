@@ -15,7 +15,7 @@ connectDB();
 // Uses
 app.use(
   cors({
-    origin: "https://contacthubweb.netlify.app" || "http://localhost:5173", // <-- your frontend URL
+    origin: "http://localhost:5173", // <-- your frontend URL
     credentials: true, // <-- allow cookies to be sent
   })
 );
