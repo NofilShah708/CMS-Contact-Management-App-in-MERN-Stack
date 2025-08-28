@@ -21,7 +21,7 @@ const Auth = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:3002/api/auth/${isLogin ? "login" : "register"}`,
+        `https://cms-contact-management.onrender.com/api/auth/${isLogin ? "login" : "register"}`,
         formData,
         { withCredentials: true }
       );
