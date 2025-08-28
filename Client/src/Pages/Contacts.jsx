@@ -23,7 +23,7 @@ const Contacts = () => {
     const fetchContacts = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3002/api/contacts/getallcontacts",
+          "https://cms-contact-management.onrender.com/api/contacts/getallcontacts",
           { withCredentials: true }
         );
         setContacts(res.data.contacts || []); // Adjust if your backend returns a different structure
@@ -37,7 +37,7 @@ const Contacts = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:3002/api/auth/profile", {
+        const res = await axios.get("https://cms-contact-management.onrender.com/api/auth/profile", {
           withCredentials: true,
         });
         setProfile(res.data.user || null);
