@@ -23,7 +23,7 @@ const AddContact = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3002/api/contacts/addcontact", // Update this URL if needed
+        "https://cms-contact-management.onrender.com/api/contacts/addcontact", // Update this URL if needed
         formData,
         { withCredentials: true } // This sends cookies (token) with the request
       );
